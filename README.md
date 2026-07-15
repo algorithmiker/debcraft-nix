@@ -1,11 +1,14 @@
-# debcraft-nix
+# Deprecated
+debcraft is now in nixpkgs: [https://github.com/NixOS/nixpkgs/pull/534968](https://github.com/NixOS/nixpkgs/pull/534968)
+
+## debcraft-nix
 
 [debcraft](https://salsa.debian.org/debian/debcraft) packaged for [Nix](https://nixos.org).
 
 The derivation is not necessarily up to nixpkgs standards right now, so it is not upstream yet.
 
-## Usage
-### Flakes
+### Usage
+#### Flakes
 ```nix
 # flake.nix
 inputs = {
@@ -21,8 +24,8 @@ inputs = {
 }
 ```
 
-### Non-flakes
+#### Non-flakes
 The repo has a package.nix, fetch and build that somehow, either by vendoring or IFD.
 
-## Bonus learning about podman 
+### Bonus learning about podman 
 - You can delete all stored podman caches with `podman image prune && podman system prune`
